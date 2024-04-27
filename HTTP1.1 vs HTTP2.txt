@@ -1,0 +1,24 @@
+HTTP1.1 vs HTTP2
+
+The web relies on a protocol called Hypertext Transfer Protocol (HTTP) to ferry data between servers and browsers. HTTP has gone through revisions to improve efficiency and HTTP2 is updated verison of HTTP1.1.
+
+HTTP 1.1:
+A browser can only send one request at a time over a single connection. If one request is stuck (like a slow-moving truck), everything else gets backed up.  This can lead to slower page loads, especially for websites with lots of images and scripts.
+
+HTTP 2:
+HTTP 2 tackles this problem with a feature called multiplexing.  Now, the browser can send multiple requests simultaneously over a single connection. Even if one request hits a snag, others can zoom past, keeping things moving smoothly.
+
+By combining these features, HTTP 2 delivers significant performance improvements.  Websites load faster, even on mobile connections, and users experience a smoother, more responsive web.
+
+These advantages have made HTTP 2 the preferred protocol.  Most modern web browsers and servers now support it.  So, the next time you browse the web, you're likely reaping the benefits of HTTP 2 without even realizing it!
+
+
+
+
+Objects and its internal representation in javascript:
+Unlike primitive data types (numbers, strings, booleans), objects can hold a collection of information. Imagine a box with labeled compartments, each compartment stores a piece of data (value) identified by a label (key). This key-value pairing lets you create complex structures to represent real-world things.
+
+Since objects are reference types, when you assign an object to a variable, you're not copying the object itself, but a reference (like a shortcut) to its location in memory. This is why modifying an object through one variable affects it everywhere else.
+
+Internal Representation:
+While we see objects in a readable format ({ name: "Alice", age: 30 }), JavaScript stores them differently. The internal structure is more like a complex hash table.  Each key-value pair might be stored in a separate location in memory, with pointers connecting them. Exactly how this works depends on the JavaScript engine's implementation.
