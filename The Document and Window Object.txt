@@ -1,0 +1,21 @@
+The Document and Window Object:
+
+The window object, which is the top-level property, holds information about the particular window or tab, including dimensions and URL, and contains the document and screen as properties. The document object, constructed after the window, represents the content on the page and contains information about the elements and their properties. Some information, such as dimensions, is duplicated across these objects.
+
+Document object:
+1. The Document object represents the entire HTML document within a web page. It serves as an interface to access and manipulate the content and structure of the document.
+
+2. The Document object forms the root of the DOM tree, which represents the hierarchical structure of HTML elements on a webpage.
+3. Selectors: Document object methods like getElementById(), getElementsByClassName(), and querySelector() enable developers to select specific elements within the document for manipulation.
+
+Window Object:
+1. Window object represents the browser window that contains the DOM document.
+2. The Window object facilitates interactions between the webpage and the browser environment. It controls actions such as opening new windows or tabs, navigating to different URLs, and accessing browser history.
+3.  Events such as load, resize, and scroll are handled by the Window object and are triggered when certain actions occur within the browser window.
+
+
+Key Differences:
+
+The Document object represents the HTML document within a webpage, while the Window object represents the browser window itself.
+Document object manipulates the content and structure of the HTML document, whereas the Window object controls browser-related functionalities and interactions.
+Document object deals with elements and content within the document, while the Window object manages browser-level operations and events.
